@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link href="https://css.gg/play-list-add.css" rel="stylesheet" />
+    <link href="https://css.gg/menu-right.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left">
+        <div class="header-left-icon">
+          <i class="fa-solid fa-truck icon-left"></i>
+          <span class="left-icon-text">Free Shipping on orders over $400</span>
+        </div>
+        <div class="header-left-icon left-icon-center">
+          <i class="bi bi-shield-fill-check icon-left"></i>
+          <span class="left-icon-text">Lifetime Warranty on Parts</span>
+        </div>
+        <div class="header-left-icon">
+          <i class="bi bi-scissors icon-left"></i>
+          <span class="left-icon-text">Up to 8pm order Cutoffs</span>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="right-text-dropdown" onclick="myFunction()">
+          <span class="show-drop-base">Knowledge Base</span>
+          <i class="bi bi-chevron-down"></i>
+          <div id="myDropdown" class="dropdown-base">
+            <a class="dropdown-base-item" href="/">Base</a>
+            <a class="dropdown-base-item" href="/">Base</a>
+            <a class="dropdown-base-item" href="/">Base</a>
+          </div>
+        </div>
+        <span class="right-text">About Us</span>
+        <span class="right-text">Blog</span>
+        <span class="right-text">Contact Us</span>
+      </div>
+    </div>
+    <div class="container-body">
+      <div class="body-header">
+        <div class="body-header-top">
+          <img src="./image/logo.png" alt="logo" width="250" height="30" />
+          <div class="header-search">
+            <input class="header-search-input" placeholder="Search..." />
+            <div class="header-search-right">
+              <div class="header-search-right-column"></div>
+              <div class="header-search-right-dropdown">
+                <span class="show-drop-search" onclick="myFunctionSearch()">
+                  All category
+                </span>
+                <i class="bi bi-chevron-down"></i>
+                <i
+                  class="bi bi-search"
+                  style="
+                    border-radius: 50%;
+                    padding: 6px 9px;
+                    background-color: #ee7a2f;
+                    color: white;
+                    margin-left: 1rem;
+                  "
+                ></i>
+                <div id="myDropdownSearch" class="dropdown-search">
+                  <a class="dropdown-search-item" href="/">search</a>
+                  <a class="dropdown-search-item" href="/">search</a>
+                  <a class="dropdown-search-item" href="/">search</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="body-header-right">
+            <div class="body-header-right-icon">
+              <i class="bi bi-person" style="font-size: 24px"></i>
+              <span style="font-size: 15px; color: #8a8a8a">Hi Irfan</span>
+            </div>
+            <div class="body-header-right-icon">
+              <i class="bi bi-basket3" style="font-size: 24px"></i>
+              <span style="font-size: 15px; color: #8a8a8a">Quick Order</span>
+            </div>
+            <div class="body-header-right-icon">
+              <i class="bi bi-cart2" style="font-size: 24px"></i>
+              <span style="font-size: 15px; color: #8a8a8a">Card</span>
+            </div>
+          </div>
+        </div>
+        <div class="body-header-row"></div>
+        <div class="body-header-bottom">
+          <div class="body-header-bottom-left">
+            <div class="body-header-bottom-left-items">
+              <span class="body-header-bottom-left-item-text">Parts</span>
+            </div>
+            <div class="body-header-bottom-left-items">
+              <span class="body-header-bottom-left-item-text">Accessories</span>
+            </div>
+            <div class="body-header-bottom-left-items">
+              <span class="body-header-bottom-left-item-text">Devices</span>
+              <div class="underline-orange"></div>
+            </div>
+            <div class="body-header-bottom-left-items">
+              <span class="body-header-bottom-left-item-text">Buyback</span>
+            </div>
+            <div class="body-header-bottom-left-items">
+              <span class="body-header-bottom-left-item-text sales"
+                >% Sales & Deald</span
+              >
+            </div>
+            <div class="body-header-bottom-left-items">
+              <i
+                class="bi bi-three-dots"
+                style="color: #8a8a8a; font-size: 26px"
+              ></i>
+            </div>
+          </div>
+          <div class="body-header-bottom-right">
+            <i
+              class="bi bi-telephone"
+              style="font-size: 1.25rem; color: #8a8a8a"
+            ></i>
+            <span class="hotline">Hotline:</span>
+            <span class="hotline-number"> +1-877-614-1001</span>
+          </div>
+          <div class="body-header-row-absolute"></div>
+        </div>
+      </div>
+      <div class="body-main">
+        <div class="body-main-top">
+          <nav
+            style="--bs-breadcrumb-divider: '>'"
+            aria-label="breadcrumb"
+            class="breadcrumbs"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active">Home</li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Library
+              </li>
+            </ol>
+          </nav>
+          <span class="title">Devices</span>
+        </div>
+        <div class="body-main-middle">
+          <div class="bd-main-middle-left">
+            <div class="bmm-left-top">
+              <div class="filter-by">
+                <span style="font-weight: 700">Filter by:</span>
+                <span class="clear-all" onclick="handleDeleteAllFilter()">
+                  Clear All
+                </span>
+              </div>
+              <div id="paramsList" class="filter-params"></div>
+            </div>
+            <div class="body-header-row"></div>
+            <div class="bmm-left-body">
+              <div class="menu-left-item">
+                <div class="menu-left-item-title" onclick="handleDropModel()">
+                  <span style="font-weight: 700">Model</span>
+                  <i class="bi bi-chevron-down" style="font-weight: 700"></i>
+                </div>
+                <div class="container-content-items" id="dropModel">
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <span style="font-weight: 700; margin: 0 10px"
+                      >Galaxy S10</span
+                    >
+                    <span style="color: #8a8a8a">(G973)</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <span style="font-weight: 700; margin: 0 10px"
+                      >Galaxy S10+</span
+                    >
+                    <span style="color: #8a8a8a">(G975)</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <span style="font-weight: 700; margin: 0 10px"
+                      >Galaxy S10e</span
+                    >
+                    <span style="color: #8a8a8a">(G970)</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <span style="font-weight: 700; margin: 0 10px"
+                      >Galaxy S20</span
+                    >
+                    <span style="color: #8a8a8a">(G980)</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <span style="font-weight: 700; margin: 0 10px"
+                      >Galaxy S20+</span
+                    >
+                    <span style="color: #8a8a8a">(G983)</span>
+                  </div>
+                  <span
+                    style="color: #ee7a2f; font-weight: 700; margin-top: 0.5rem"
+                    >View All</span
+                  >
+                </div>
+              </div>
+              <div class="body-header-row"></div>
+              <div class="menu-left-item">
+                <div
+                  class="menu-left-item-title"
+                  onclick="handleDropProductType()"
+                >
+                  <span style="font-weight: 700">Product Type</span>
+                  <i class="bi bi-chevron-down" style="font-weight: 700"></i>
+                </div>
+                <div class="container-content-items" id="productType">
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <span style="font-weight: 700; margin: 0 10px"
+                      >Adhesives</span
+                    >
+                    <span style="color: #8a8a8a">42</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <span style="font-weight: 700; margin: 0 10px"
+                      >Antennas</span
+                    >
+                    <span style="color: #8a8a8a">42</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <span style="font-weight: 700; margin: 0 10px"
+                      >Battery Covers</span
+                    >
+                    <span style="color: #8a8a8a">42</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <span style="font-weight: 700; margin: 0 10px"
+                      >Board ICs</span
+                    >
+                    <span style="color: #8a8a8a">42</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <span style="font-weight: 700; margin: 0 10px"
+                      >Brackets</span
+                    >
+                    <span style="color: #8a8a8a">42</span>
+                  </div>
+                  <span
+                    style="color: #ee7a2f; font-weight: 700; margin-top: 0.5rem"
+                    >View All</span
+                  >
+                </div>
+              </div>
+              <div class="body-header-row"></div>
+              <div class="menu-left-item">
+                <div class="menu-left-item-title">
+                  <span style="font-weight: 700">Grade</span>
+                  <i class="bi bi-chevron-down" style="font-weight: 700"></i>
+                </div>
+                <div class="container-content-items-block">
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <div class="star-item">
+                      <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                      <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                      <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                      <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                      <i class="bi bi-star-fill" style="color: #a3a3a3"></i>
+                    </div>
+                    <span style="font-weight: 700; margin-right: 10px"
+                      >4 $ up</span
+                    >
+                    <span style="color: #8a8a8a">42</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <div class="star-item">
+                      <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                      <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                      <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                      <i class="bi bi-star-fill" style="color: #a3a3a3"></i>
+                      <i class="bi bi-star-fill" style="color: #a3a3a3"></i>
+                    </div>
+                    <span style="font-weight: 700; margin-right: 10px"
+                      >3 $ up</span
+                    >
+                    <span style="color: #8a8a8a">42</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <div class="star-item">
+                      <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                      <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                      <i class="bi bi-star-fill" style="color: #a3a3a3"></i>
+                      <i class="bi bi-star-fill" style="color: #a3a3a3"></i>
+                      <i class="bi bi-star-fill" style="color: #a3a3a3"></i>
+                    </div>
+                    <span style="font-weight: 700; margin-right: 10px"
+                      >2 $ up</span
+                    >
+                    <span style="color: #8a8a8a">42</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <div class="star-item">
+                      <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                      <i class="bi bi-star-fill" style="color: #a3a3a3"></i>
+                      <i class="bi bi-star-fill" style="color: #a3a3a3"></i>
+                      <i class="bi bi-star-fill" style="color: #a3a3a3"></i>
+                      <i class="bi bi-star-fill" style="color: #a3a3a3"></i>
+                    </div>
+                    <span style="font-weight: 700; margin-right: 10px"
+                      >1 $ up</span
+                    >
+                    <span style="color: #8a8a8a">42</span>
+                  </div>
+                  <span
+                    style="color: #ee7a2f; font-weight: 700; margin-top: 0.5rem"
+                    >View All</span
+                  >
+                </div>
+              </div>
+              <div class="body-header-row"></div>
+              <div class="menu-left-item">
+                <div class="menu-left-item-title">
+                  <span style="font-weight: 700">Brand</span>
+                  <i class="bi bi-chevron-down" style="font-weight: 700"></i>
+                </div>
+                <div class="container-content-items-block">
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <span style="font-weight: 700; margin: 0 10px">Apple</span>
+                    <span style="color: #8a8a8a">29</span>
+                  </div>
+                  <div class="content-item">
+                    <input
+                      type="checkbox"
+                      style="width: 20px"
+                      class="checked"
+                      checked="checked"
+                    />
+                    <span style="font-weight: 700; margin: 0 10px"
+                      >Samsung</span
+                    >
+                    <span style="color: #8a8a8a">453</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <span style="font-weight: 700; margin: 0 10px">LG</span>
+                    <span style="color: #8a8a8a">17</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <span style="font-weight: 700; margin: 0 10px">Sony</span>
+                    <span style="color: #8a8a8a">99</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <span style="font-weight: 700; margin: 0 10px">Huawei</span>
+                    <span style="color: #8a8a8a">303</span>
+                  </div>
+                  <span
+                    style="color: #ee7a2f; font-weight: 700; margin-top: 0.5rem"
+                    >View All</span
+                  >
+                </div>
+              </div>
+              <div class="body-header-row"></div>
+              <div class="menu-left-item">
+                <div class="menu-left-item-title">
+                  <span style="font-weight: 700">Color</span>
+                  <i class="bi bi-chevron-down" style="font-weight: 700"></i>
+                </div>
+                <div class="container-content-items-block">
+                  <div class="content-item">
+                    <input
+                      type="checkbox"
+                      style="width: 20px"
+                      checked="checked"
+                      class="checked"
+                    />
+                    <div
+                      style="background-color: blue"
+                      class="color-item"
+                    ></div>
+                    <span style="font-weight: 700; margin: 0 10px">Blue</span>
+                    <span style="color: #8a8a8a">29</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <div
+                      style="background-color: gray"
+                      class="color-item"
+                    ></div>
+                    <span style="font-weight: 700; margin: 0 10px">Gray</span>
+                    <span style="color: #8a8a8a">29</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <div
+                      style="background-color: brown"
+                      class="color-item"
+                    ></div>
+                    <span style="font-weight: 700; margin: 0 10px">Brown</span>
+                    <span style="color: #8a8a8a">29</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <div
+                      style="background-color: black"
+                      class="color-item"
+                    ></div>
+                    <span style="font-weight: 700; margin: 0 10px">Black</span>
+                    <span style="color: #8a8a8a">29</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <div
+                      style="background-color: white"
+                      class="color-item"
+                    ></div>
+                    <span style="font-weight: 700; margin: 0 10px">White</span>
+                    <span style="color: #8a8a8a">29</span>
+                  </div>
+                  <div class="content-item">
+                    <input type="checkbox" style="width: 20px" />
+                    <div
+                      style="background-color: green"
+                      class="color-item"
+                    ></div>
+                    <span style="font-weight: 700; margin: 0 10px">Green</span>
+                    <span style="color: #8a8a8a">29</span>
+                  </div>
+                  <span
+                    style="color: #ee7a2f; font-weight: 700; margin-top: 0.5rem"
+                    >View All</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bd-main-middle-right">
+            <div class="bdmm-right-top">
+              <span class="bdmm-right-top-left">Shown 251 items</span>
+              <div class="bdmm-right-top-right">
+                <i
+                  class="bi bi-list"
+                  style="
+                    transform: scale(2);
+                    margin-right: 2rem;
+                    color: #ee7a2f;
+                  "
+                ></i>
+                <i
+                  class="bi bi-grid-3x3-gap-fill"
+                  style="transform: scale(1.5); margin-right: 2rem"
+                ></i>
+                <div class="select-part-type">
+                  <span class="part-type-item">Part Type Position</span>
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+              </div>
+            </div>
+            <div class="bdmm-right-body">
+              <div class="product-item">
+                <div class="product-item-image">
+                  <div class="hash-tag">
+                    <span class="hash-tag-item" style="background-color: red"
+                      >% SALES</span
+                    >
+                    <span
+                      class="hash-tag-item"
+                      style="background-color: #b69bf8"
+                      >PREMIUM</span
+                    >
+                  </div>
+                  <div class="container-product-image">
+                    <img
+                      src="./image/mobile-phone.jpg"
+                      alt="product"
+                      style="width: 100%"
+                    />
+                  </div>
+                </div>
+                <div class="product-item-content">
+                  <div class="product-item-content-left">
+                    <span class="product-name"
+                      >Samsung Galaxy S21+ 5G 12GB (Grade A)</span
+                    >
+                    <span class="product-name">(Handset Only)</span>
+                    <span style="margin-top: 1rem">SKU: GH82-22131D</span>
+                    <div class="star-point">
+                      <span style="font-weight: 700">4.5</span>
+                      <div class="star-item">
+                        <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                        <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                        <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                        <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                        <i class="bi bi-star-fill" style="color: #a3a3a3"></i>
+                      </div>
+                      <span style="color: #ee7a2f">3,614 Reviews</span>
+                    </div>
+                    <div class="color-list">
+                      <div
+                        style="background-color: white"
+                        class="color-list-item color-selected"
+                      ></div>
+                      <div
+                        style="background-color: yellow"
+                        class="color-list-item"
+                      ></div>
+                      <div
+                        style="background-color: blue"
+                        class="color-list-item"
+                      ></div>
+                      <span style="color: #8a8a8a">White Color</span>
+                    </div>
+                    <div class="product-informations">
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >Operating system</span
+                        >
+                        <span>Android 10</span>
+                      </div>
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >Display</span
+                        >
+                        <span>6.53",IPS</span>
+                      </div>
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >Display resolution</span
+                        >
+                        <span>2340x1080 </span>
+                      </div>
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >CPU</span
+                        >
+                        <span>Mediatek Helio G80, 2000MGh, 8 core</span>
+                      </div>
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >RAM size</span
+                        >
+                        <span>4 Gb</span>
+                      </div>
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >Built-in memory</span
+                        >
+                        <span>64 Gb</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-content-right">
+                    <div class="pic-right-icon">
+                      <i
+                        class="gg-menu-right"
+                        style="transform: rotate(90deg); margin-right: 2rem"
+                      ></i>
+                      <i
+                        class="gg-play-list-add"
+                        style="transform: scale(1.25)"
+                      ></i>
+                    </div>
+                    <span style="color: #8a8a8a">$488.99</span>
+                    <span style="font-size: 2rem; font-weight: 700"
+                      >$2,139.49</span
+                    >
+                    <div class="add-cart">
+                      <span style="margin: 0 10px">-</span>
+                      <span>1</span>
+                      <span style="margin: 0 15px 0 5px">+</span>
+                      <i
+                        class="bi bi-cart2"
+                        style="
+                          transform: scale(1.5);
+                          background-color: #ee7a2f;
+                          border-radius: 20px;
+                          padding: 0px 10px;
+                          color: white;
+                        "
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-line"></div>
+              <div class="product-item">
+                <div class="product-item-image">
+                  <div class="hash-tag">
+                    <span class="hash-tag-item" style="background-color: red"
+                      >% SALES</span
+                    >
+                    <span
+                      class="hash-tag-item"
+                      style="background-color: #b69bf8"
+                      >PREMIUM</span
+                    >
+                  </div>
+                  <div class="container-product-image">
+                    <img
+                      src="./image/mobile-phone.jpg"
+                      alt="product"
+                      style="width: 100%"
+                    />
+                  </div>
+                </div>
+                <div class="product-item-content">
+                  <div class="product-item-content-left">
+                    <span class="product-name"
+                      >Samsung Galaxy S21+ 5G 12GB (Grade A)</span
+                    >
+                    <span class="product-name">(Handset Only)</span>
+                    <span style="margin-top: 1rem">SKU: GH82-22131D</span>
+                    <div class="star-point">
+                      <span style="font-weight: 700">4.5</span>
+                      <div class="star-item">
+                        <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                        <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                        <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                        <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                        <i class="bi bi-star-fill" style="color: #a3a3a3"></i>
+                      </div>
+                      <span style="color: #ee7a2f">3,614 Reviews</span>
+                    </div>
+                    <div class="color-list">
+                      <div
+                        style="background-color: white"
+                        class="color-list-item color-selected"
+                      ></div>
+                      <div
+                        style="background-color: yellow"
+                        class="color-list-item"
+                      ></div>
+                      <div
+                        style="background-color: blue"
+                        class="color-list-item"
+                      ></div>
+                      <span style="color: #8a8a8a">White Color</span>
+                    </div>
+                    <div class="product-informations">
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >Operating system</span
+                        >
+                        <span>Android 10</span>
+                      </div>
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >Display</span
+                        >
+                        <span>6.53",IPS</span>
+                      </div>
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >Display resolution</span
+                        >
+                        <span>2340x1080 </span>
+                      </div>
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >CPU</span
+                        >
+                        <span>Mediatek Helio G80, 2000MGh, 8 core</span>
+                      </div>
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >RAM size</span
+                        >
+                        <span>4 Gb</span>
+                      </div>
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >Built-in memory</span
+                        >
+                        <span>64 Gb</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-content-right">
+                    <div class="pic-right-icon">
+                      <i
+                        class="gg-menu-right"
+                        style="transform: rotate(90deg); margin-right: 2rem"
+                      ></i>
+                      <i
+                        class="gg-play-list-add"
+                        style="transform: scale(1.25)"
+                      ></i>
+                    </div>
+                    <span style="color: #8a8a8a">$488.99</span>
+                    <span style="font-size: 2rem; font-weight: 700"
+                      >$2,139.49</span
+                    >
+                    <div class="add-cart">
+                      <span style="margin: 0 10px">-</span>
+                      <span>1</span>
+                      <span style="margin: 0 15px 0 5px">+</span>
+                      <i
+                        class="bi bi-cart2"
+                        style="
+                          transform: scale(1.5);
+                          background-color: #ee7a2f;
+                          border-radius: 20px;
+                          padding: 0px 10px;
+                          color: white;
+                        "
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-line"></div>
+              <div class="product-item">
+                <div class="product-item-image">
+                  <div class="hash-tag">
+                    <span class="hash-tag-item" style="background-color: red"
+                      >% SALES</span
+                    >
+                    <span
+                      class="hash-tag-item"
+                      style="background-color: #b69bf8"
+                      >PREMIUM</span
+                    >
+                  </div>
+                  <div class="container-product-image">
+                    <img
+                      src="./image/mobile-phone.jpg"
+                      alt="product"
+                      style="width: 100%"
+                    />
+                  </div>
+                </div>
+                <div class="product-item-content">
+                  <div class="product-item-content-left">
+                    <span class="product-name"
+                      >Samsung Galaxy S21+ 5G 12GB (Grade A)</span
+                    >
+                    <span class="product-name">(Handset Only)</span>
+                    <span style="margin-top: 1rem">SKU: GH82-22131D</span>
+                    <div class="star-point">
+                      <span style="font-weight: 700">4.5</span>
+                      <div class="star-item">
+                        <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                        <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                        <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                        <i class="bi bi-star-fill" style="color: #ee7a2f"></i>
+                        <i class="bi bi-star-fill" style="color: #a3a3a3"></i>
+                      </div>
+                      <span style="color: #ee7a2f">3,614 Reviews</span>
+                    </div>
+                    <div class="color-list">
+                      <div
+                        style="background-color: white"
+                        class="color-list-item color-selected"
+                      ></div>
+                      <div
+                        style="background-color: yellow"
+                        class="color-list-item"
+                      ></div>
+                      <div
+                        style="background-color: blue"
+                        class="color-list-item"
+                      ></div>
+                      <span style="color: #8a8a8a">White Color</span>
+                    </div>
+                    <div class="product-informations">
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >Operating system</span
+                        >
+                        <span>Android 10</span>
+                      </div>
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >Display</span
+                        >
+                        <span>6.53",IPS</span>
+                      </div>
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >Display resolution</span
+                        >
+                        <span>2340x1080 </span>
+                      </div>
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >CPU</span
+                        >
+                        <span>Mediatek Helio G80, 2000MGh, 8 core</span>
+                      </div>
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >RAM size</span
+                        >
+                        <span>4 Gb</span>
+                      </div>
+                      <div class="infor">
+                        <span style="color: #8a8a8a; margin-right: 5px"
+                          >Built-in memory</span
+                        >
+                        <span>64 Gb</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-item-content-right">
+                    <div class="pic-right-icon">
+                      <i
+                        class="gg-menu-right"
+                        style="transform: rotate(90deg); margin-right: 2rem"
+                      ></i>
+                      <i
+                        class="gg-play-list-add"
+                        style="transform: scale(1.25)"
+                      ></i>
+                    </div>
+                    <span style="color: #8a8a8a">$488.99</span>
+                    <span style="font-size: 2rem; font-weight: 700"
+                      >$2,139.49</span
+                    >
+                    <div class="add-cart">
+                      <span style="margin: 0 10px">-</span>
+                      <span>1</span>
+                      <span style="margin: 0 15px 0 5px">+</span>
+                      <i
+                        class="bi bi-cart2"
+                        style="
+                          transform: scale(1.5);
+                          background-color: #ee7a2f;
+                          border-radius: 20px;
+                          padding: 0px 10px;
+                          color: white;
+                        "
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/a71794cb11.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
