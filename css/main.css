@@ -8,8 +8,7 @@
 
 .header {
   background-color: #f3f3f3;
-  padding: 1rem 4rem;
-  display: flex;
+  padding: 0.5rem 4rem;
   justify-content: space-between;
 }
 
@@ -62,7 +61,6 @@
 .header-search {
   position: relative;
   width: 100%;
-  margin-left: 2rem;
 }
 .header-search-input {
   background-color: #f3f3f3;
@@ -97,9 +95,6 @@
   bottom: 15px;
 }
 .body-header-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 1rem 4rem;
   position: relative;
 }
@@ -241,6 +236,7 @@
 }
 .product-item {
   display: flex;
+  justify-content: space-between;
 }
 .product-item-image {
   width: 20%;
@@ -255,7 +251,6 @@
   justify-content: space-between;
 }
 .container-product-image {
-  width: 13rem;
   margin: 5rem 0;
 }
 .product-item-content-left {
@@ -414,4 +409,82 @@
 }
 .remove-param {
   cursor: pointer;
+}
+.money {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.logo {
+  width: 29rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .product-name {
+    font-size: 1rem;
+  }
+  .money {
+    font-size: 1rem;
+  }
+  .hash-tag-item {
+    font-size: 8px;
+  }
+  .bd-main-middle-left {
+    width: 30%;
+    padding-right: 0;
+  }
+  .bd-main-middle-right {
+    width: 70%;
+  }
+  .product-item-content {
+    padding: 2rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .body-header-top {
+    padding: 10px 1rem;
+  }
+  .body-main {
+    padding: 1rem 1rem;
+  }
+  .bd-main-middle-right {
+    width: 100%;
+  }
+  .bmm-left-top {
+    display: none;
+  }
+  .bmm-left-body {
+    display: none;
+  }
+  .body-header-row {
+    display: none;
+  }
+  .bd-main-middle-left {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .body-main-middle {
+    flex-direction: column;
+  }
+  .bdmm-right-top {
+    display: none;
+  }
+  .bdmm-right-body {
+    display: none;
+  }
+  .product-name {
+    font-size: 0.75rem;
+    font-weight: normal;
+  }
+  .color-list {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .add-cart {
+    width: 100%;
+  }
+  .body-header-right-icon {
+    display: none;
+  }
 }

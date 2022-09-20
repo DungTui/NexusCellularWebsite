@@ -24,8 +24,8 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="header">
-      <div class="header-left">
+    <div class="header d-lg-flex d-none">
+      <div class="d-flex">
         <div class="header-left-icon">
           <i class="fa-solid fa-truck icon-left"></i>
           <span class="left-icon-text">Free Shipping on orders over $400</span>
@@ -56,8 +56,64 @@
     </div>
     <div class="container-body">
       <div class="body-header">
-        <div class="body-header-top">
-          <img src="./image/logo.png" alt="logo" width="250" height="30" />
+        <div class="body-header-top px-md-4 px-sm-4">
+          <div class="logo">
+            <img src="./image/logo.png" alt="logo" width="100%" />
+          </div>
+          <div class="header-search d-lg-flex d-none">
+            <input class="header-search-input" placeholder="Search..." />
+            <div class="header-search-right">
+              <div class="header-search-right-column"></div>
+              <div class="header-search-right-dropdown">
+                <span class="show-drop-search" onclick="myFunctionSearch()">
+                  All category
+                </span>
+                <i class="bi bi-chevron-down"></i>
+                <i
+                  class="bi bi-search"
+                  style="
+                    border-radius: 50%;
+                    padding: 6px 9px;
+                    background-color: #ee7a2f;
+                    color: white;
+                    margin-left: 1rem;
+                  "
+                ></i>
+                <div id="myDropdownSearch" class="dropdown-search">
+                  <a class="dropdown-search-item" href="/">search</a>
+                  <a class="dropdown-search-item" href="/">search</a>
+                  <a class="dropdown-search-item" href="/">search</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="body-header-right justify-content-end">
+            <div class="body-header-right-icon">
+              <i class="bi bi-person" style="font-size: 24px"></i>
+              <span style="font-size: 15px; color: #8a8a8a">Hi Irfan</span>
+            </div>
+            <div class="body-header-right-icon">
+              <i class="bi bi-basket3" style="font-size: 24px"></i>
+              <span style="font-size: 15px; color: #8a8a8a">Quick Order</span>
+            </div>
+            <div class="body-header-right-icon">
+              <i class="bi bi-cart2" style="font-size: 24px"></i>
+              <span style="font-size: 15px; color: #8a8a8a">Card</span>
+            </div>
+            <div class="d-flex d-md-none">
+              <i class="bi bi-person" style="font-size: 24px"></i>
+              <i
+                class="bi bi-basket3"
+                style="font-size: 24px; margin-left: 10px"
+              ></i>
+              <i
+                class="bi bi-cart2"
+                style="font-size: 24px; margin-left: 10px"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="px-md-4 d-lg-none d-sm-flex">
           <div class="header-search">
             <input class="header-search-input" placeholder="Search..." />
             <div class="header-search-right">
@@ -85,23 +141,11 @@
               </div>
             </div>
           </div>
-          <div class="body-header-right">
-            <div class="body-header-right-icon">
-              <i class="bi bi-person" style="font-size: 24px"></i>
-              <span style="font-size: 15px; color: #8a8a8a">Hi Irfan</span>
-            </div>
-            <div class="body-header-right-icon">
-              <i class="bi bi-basket3" style="font-size: 24px"></i>
-              <span style="font-size: 15px; color: #8a8a8a">Quick Order</span>
-            </div>
-            <div class="body-header-right-icon">
-              <i class="bi bi-cart2" style="font-size: 24px"></i>
-              <span style="font-size: 15px; color: #8a8a8a">Card</span>
-            </div>
-          </div>
         </div>
         <div class="body-header-row"></div>
-        <div class="body-header-bottom">
+        <div
+          class="body-header-bottom d-lg-flex d-none justify-content-between align-items-center"
+        >
           <div class="body-header-bottom-left">
             <div class="body-header-bottom-left-items">
               <span class="body-header-bottom-left-item-text">Parts</span>
@@ -139,7 +183,7 @@
           <div class="body-header-row-absolute"></div>
         </div>
       </div>
-      <div class="body-main">
+      <div class="body-main px-md-4">
         <div class="body-main-top">
           <nav
             style="--bs-breadcrumb-divider: '>'"
@@ -453,6 +497,32 @@
                 </div>
               </div>
             </div>
+            <div class="d-flex d-md-none">
+              <i
+                class="bi bi-list"
+                style="transform: scale(2); margin-right: 1rem; color: #ee7a2f"
+              ></i>
+              <i
+                class="bi bi-grid-3x3-gap-fill"
+                style="transform: scale(1.5); color: #ee7a2f"
+              ></i>
+            </div>
+            <div class="d-flex d-md-none">
+              <div class="d-flex me-4">
+                <i
+                  class="bi bi-filter-left"
+                  style="transform: scale(2); margin-right: 1rem"
+                ></i>
+                <span>Sort</span>
+              </div>
+              <div class="d-flex">
+                <i
+                  class="bi bi-funnel-fill"
+                  style="transform: scale(1.5); margin-right: 1rem"
+                ></i>
+                <span>Filters</span>
+              </div>
+            </div>
           </div>
           <div class="bd-main-middle-right">
             <div class="bdmm-right-top">
@@ -581,9 +651,7 @@
                       ></i>
                     </div>
                     <span style="color: #8a8a8a">$488.99</span>
-                    <span style="font-size: 2rem; font-weight: 700"
-                      >$2,139.49</span
-                    >
+                    <span class="money">$2,139.49</span>
                     <div class="add-cart">
                       <span style="margin: 0 10px">-</span>
                       <span>1</span>
@@ -840,6 +908,266 @@
                       <span style="margin: 0 10px">-</span>
                       <span>1</span>
                       <span style="margin: 0 15px 0 5px">+</span>
+                      <i
+                        class="bi bi-cart2"
+                        style="
+                          transform: scale(1.5);
+                          background-color: #ee7a2f;
+                          border-radius: 20px;
+                          padding: 0px 10px;
+                          color: white;
+                        "
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex d-md-none mt-4">
+              <div class="container">
+                <div class="row mb-4">
+                  <div class="col border pb-2">
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="hash-tag">
+                        <span
+                          class="hash-tag-item"
+                          style="background-color: red"
+                          >% SALES</span
+                        >
+                        <span
+                          class="hash-tag-item"
+                          style="background-color: #b69bf8"
+                          >PREMIUM</span
+                        >
+                      </div>
+                    </div>
+                    <img
+                      src="./image/mobile-phone.jpg"
+                      alt="product"
+                      style="width: 100%"
+                    />
+                    <span class="product-name"
+                      >Samsung Galaxy S21+ 5G 12GB (Grade A)</span
+                    >
+                    <div class="color-list">
+                      <div
+                        style="background-color: white"
+                        class="color-list-item"
+                      ></div>
+                      <div
+                        style="background-color: yellow"
+                        class="color-list-item"
+                      ></div>
+                      <div
+                        style="background-color: blue"
+                        class="color-list-item"
+                      ></div>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <span
+                        style="
+                          color: #8a8a8a;
+                          text-decoration-line: line-through;
+                        "
+                        >$58.95</span
+                      >
+                      <span style="font-weight: 700">$14.99</span>
+                    </div>
+                    <div class="add-cart">
+                      <span style="margin: 0 17px">-</span>
+                      <span>1</span>
+                      <span style="margin: 0 23px 0 20px">+</span>
+                      <i
+                        class="bi bi-cart2"
+                        style="
+                          transform: scale(1.5);
+                          background-color: #ee7a2f;
+                          border-radius: 20px;
+                          padding: 0px 10px;
+                          color: white;
+                        "
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="col border pb-2">
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="hash-tag">
+                        <span
+                          class="hash-tag-item"
+                          style="background-color: red"
+                          >% SALES</span
+                        >
+                        <span
+                          class="hash-tag-item"
+                          style="background-color: #b69bf8"
+                          >PREMIUM</span
+                        >
+                      </div>
+                    </div>
+                    <img
+                      src="./image/mobile-phone.jpg"
+                      alt="product"
+                      style="width: 100%"
+                    />
+                    <span class="product-name"
+                      >Samsung Galaxy S21+ 5G 12GB (Grade A)</span
+                    >
+                    <div class="color-list">
+                      <div
+                        style="background-color: white"
+                        class="color-list-item"
+                      ></div>
+                      <div
+                        style="background-color: yellow"
+                        class="color-list-item"
+                      ></div>
+                      <div
+                        style="background-color: blue"
+                        class="color-list-item"
+                      ></div>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <span
+                        style="
+                          color: #8a8a8a;
+                          text-decoration-line: line-through;
+                        "
+                        >$58.95</span
+                      >
+                      <span style="font-weight: 700">$14.99</span>
+                    </div>
+                    <div class="add-cart">
+                      <span style="margin: 0 17px">-</span>
+                      <span>1</span>
+                      <span style="margin: 0 23px 0 20px">+</span>
+                      <i
+                        class="bi bi-cart2"
+                        style="
+                          transform: scale(1.5);
+                          background-color: #ee7a2f;
+                          border-radius: 20px;
+                          padding: 0px 10px;
+                          color: white;
+                        "
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-4">
+                  <div class="col border pb-2">
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="hash-tag">
+                        <span
+                          class="hash-tag-item"
+                          style="background-color: red"
+                          >% SALES</span
+                        >
+                        <span
+                          class="hash-tag-item"
+                          style="background-color: #b69bf8"
+                          >PREMIUM</span
+                        >
+                      </div>
+                    </div>
+                    <img
+                      src="./image/mobile-phone.jpg"
+                      alt="product"
+                      style="width: 100%"
+                    />
+                    <span class="product-name"
+                      >Samsung Galaxy S21+ 5G 12GB (Grade A)</span
+                    >
+                    <div class="color-list">
+                      <div
+                        style="background-color: white"
+                        class="color-list-item"
+                      ></div>
+                      <div
+                        style="background-color: yellow"
+                        class="color-list-item"
+                      ></div>
+                      <div
+                        style="background-color: blue"
+                        class="color-list-item"
+                      ></div>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <span
+                        style="
+                          color: #8a8a8a;
+                          text-decoration-line: line-through;
+                        "
+                        >$58.95</span
+                      >
+                      <span style="font-weight: 700">$14.99</span>
+                    </div>
+                    <div class="add-cart">
+                      <span style="margin: 0 17px">-</span>
+                      <span>1</span>
+                      <span style="margin: 0 23px 0 20px">+</span>
+                      <i
+                        class="bi bi-cart2"
+                        style="
+                          transform: scale(1.5);
+                          background-color: #ee7a2f;
+                          border-radius: 20px;
+                          padding: 0px 10px;
+                          color: white;
+                        "
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="col border pb-2">
+                    <div class="d-flex justify-content-between mb-2">
+                      <div class="hash-tag">
+                        <span
+                          class="hash-tag-item"
+                          style="background-color: red"
+                          >% SALES</span
+                        >
+                        <span
+                          class="hash-tag-item"
+                          style="background-color: #b69bf8"
+                          >PREMIUM</span
+                        >
+                      </div>
+                    </div>
+                    <img
+                      src="./image/mobile-phone.jpg"
+                      alt="product"
+                      style="width: 100%"
+                    />
+                    <span class="product-name"
+                      >Samsung Galaxy S21+ 5G 12GB (Grade A)</span
+                    >
+                    <div class="color-list">
+                      <div
+                        style="background-color: white"
+                        class="color-list-item"
+                      ></div>
+                      <div
+                        style="background-color: yellow"
+                        class="color-list-item"
+                      ></div>
+                      <div
+                        style="background-color: blue"
+                        class="color-list-item"
+                      ></div>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <span
+                        style="
+                          color: #8a8a8a;
+                          text-decoration-line: line-through;
+                        "
+                        >$58.95</span
+                      >
+                      <span style="font-weight: 700">$14.99</span>
+                    </div>
+                    <div class="add-cart">
+                      <span style="margin: 0 17px">-</span>
+                      <span>1</span>
+                      <span style="margin: 0 23px 0 20px">+</span>
                       <i
                         class="bi bi-cart2"
                         style="
